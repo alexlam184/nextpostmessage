@@ -5,7 +5,7 @@ export default function IframeParent(){
 
   const sendMessage = () => {
     if (!iFrameRef.current) return;
-    iFrameRef.current.contentWindow.postMessage(
+        iFrameRef.current.contentWindow.postMessage(
       "Hello son!",
       "*"
     );
